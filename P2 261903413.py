@@ -18,13 +18,13 @@ while True:
                 flight_name = ["Flight company A", "Flight company B"][flight_choice - 1]
                 print(f"Booking a ticket for {flight_name}:")
 
-                # Here, you can implement the code to book a ticket, such as selecting a row and seat.
-                # You can use 2D arrays or dictionaries to manage seat availability.
+                # Implement the code to book a ticket, such as selecting a row and seat.
+                # Used 2D arrays or dictionaries to manage seat availability.
 
                 row = int(input("Enter row number: "))
                 seat = input("Enter seat letter (A, B, C, D, E.): ").upper()
 
-                # Add your booking logic here
+                # Adding booking logic here
                 if row <= 0 or row > 10 or ord(seat) < ord('A') or ord(seat) > ord('E'):
                     print("Invalid row or seat selection.")
                 else:
